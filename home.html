@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <body>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check2" viewBox="0 0 16 16">
+                <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+                </path>
+            </symbol>
+            <symbol id="circle-half" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+            </symbol>
+            <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+                </path>
+                <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+                </path>
+            </symbol>
+            <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+                </path>
+            </symbol>
+        </svg> -->
+
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+            <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
+                type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+                <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                    <use href="#sun-fill"></use>
+                </svg>
+                <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center active"
+                        data-bs-theme-value="light" aria-pressed="true">
+                        <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                            <use href="#sun-fill"></use>
+                        </svg>
+                        Light
+                        <svg class="bi ms-auto d-none" width="1em" height="1em">
+                            <use href="#check2"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                        aria-pressed="false">
+                        <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                            <use href="#moon-stars-fill"></use>
+                        </svg>
+                        Dark
+                        <svg class="bi ms-auto d-none" width="1em" height="1em">
+                            <use href="#check2"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+                        aria-pressed="false">
+                        <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                            <use href="#circle-half"></use>
+                        </svg>
+                        Auto
+                        <svg class="bi ms-auto d-none" width="1em" height="1em">
+                            <use href="#check2"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <nav id="hamburger" class="navbar fixed-top" aria-label="First navbar example"
+            style="background-color: rgb(41, 28, 40);opacity: 0.85;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Portfolio</a>
+                <button class="navbar-toggler collapsed bg-light " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1suA8yPOOrARKXQRwsxMWmW_W4NomAzND/view?usp=drivesdk"
+                                class="d-inline nav-link text-light">Resume</a>
+                            <a href="/Rajat Resume.pdf" download>
+                                <img height="20" width="20" src="/download.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <hr class="bg-light"> -->
+        <div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img height="700vh" src="/Hello,my name is.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" container">
+
+            <main class="m-2 container">
+
+                <h3 id="projects" class="py-4 my-4 fst-italic border-bottom">
+                    Projects
+                </h3>
+                <div class="row mb-2 m-4">
+
+                    <div id="project1" onmouseenter="profunc1()" onmouseleave="profunction1()" class="col-md-6" >
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-230 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h3 class="mb-0">Image-Recognition</h3>
+                                <div class="mb-1 text-body-secondary">(OCT 22– NOV 22)</div>
+                                <p class="mb-auto">
+                                    An image recognition cloud project involves developing a system that can recognize objects in images and provide accurate and reliable results. It includes data collection, model training, cloud deployment, API development, and user interface..</p>
+                                <a href="https://github.com/Rajat2308/Image-Recognition" class="stretched-link">go
+                                    to
+                                    project</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img class="bd-placeholder-img" width="200" height="250" src="/2.1.jpg"
+                                    alt="Loading an Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project2" onmouseenter="profunc2()" onmouseleave="profunction2()" class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h3 class="mb-0">
+                                    Analysis-of-Geotracking-Data</h3>
+                                <div class="mb-1 text-body-secondary">(Aug 22 – Nov 22)</div>
+                                <p class="mb-auto">This project involves the use of K-Means Clustering to find the best accommodation for students in Bangalore (or any other city of your choice) by classifying accommodation for incoming students on the basis of their preferences on amenities, budget and proximity to the location.</p>
+                                <a href="https://github.com/Rajat2308/Analysis-of-Geotracking-Data"
+                                    class="stretched-link">go to project</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img class="bd-placeholder-img" width="250" height="300" src="/1.png"
+                                    alt="Loading an Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="project3" onmouseenter="profunc3()" onmouseleave="profunction3()" class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">drivex-spots-</h3>
+                            <div class="mb-1 text-body-secondary">(July 22– Aug22)</div>
+                            <p class="mb-auto">
+                                An online car rental project would require careful planning and development to ensure it meets the needs of both customers and car rental companies, providing a convenient and seamless rental experience.</p>
+                            <a href="https://github.com/Rajat2308/online-car-rental-system-driveX-spots-" class="stretched-link">go
+                                to
+                                project</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="250" height="250" src="/3.0.png"
+                                alt="Loading an Image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-md-8">
+                        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                             RJ
+                        </h3>
+
+                        <article class="blog-post">
+                            <h2 id="about" class="blog-post-title mb-1">About</h2>
+
+                            <p> Hey! 
+                                
+                                This is Rajat. I realise this is like a charitable extended description of myself, but I will keep it brief and up to the mark. So, basically, I'm a fresher at VIT Bhopal pursuing B.Tech. in CSE (core). I'm an enthusiastic learner, an eligible person, and a colourful problem solver. A fervent engineering freshmen who is self-motivated and capable of utilising technical abilities for the betterment of the organisation.
+                                </p>
+                            <hr>
+                            <h2 id="skills">Skills</h2>
+                            <p>My prefered programming language is Java as it is an Object Oriented Programming
+                                language and its easy to solve various problems using Collection Framework provided
+                                by Java.</p>
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+                                <div id="col1" onmouseenter="myFunction()" onmouseleave="myfunc()" class="col">
+                                    <div class="card shadow-sm">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                            src="/Data.jpeg" alt="">
+                                        <div class="card-body">
+                                            <dt>Data analysis</dt>
+                                            <dd>I have a pror experience of Data analyzing using <strong>MySQL</strong>  and
+                                                <strong>Python</strong>
+                                                </strong> and also know how to use <strong> R-language</strong> and
+                                                <strong>Tableau</strong> for its visualization, which I learned from course offered by
+                                                Linkedin learning and Coursera. I have also made some projects based on its.
+                                                
+                                            </dd>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="col2" onmouseover="myFunction1()" onmouseleave="myfunc1()" class="col">
+                                    <div class="card shadow-sm">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                            src="/cloud.jpeg" alt="">
+                                        <div class="card-body">
+                                            <dt>Cloud Computing</dt>
+                                            <dd>I have completed a course on <strong>Cloud Computing</strong> offered by Teachnook which taught me
+                                                what are different services offered by micosoft Azure and how to deploy and use
+                                                those services.
+                                            </dd>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="col3" onmouseover="myFunction2()" onmouseleave="myfunc2()" class="col">
+                                    <div class="card shadow-sm">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                            src="/DSA2.png" alt="">
+                                        <div class="card-body">
+                                            <dt>Data Structures and Algorithm</dt>
+                                            <dd>I can solve various DSA problems using Java Language.</dd>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="col4" onmouseover="myFunction3()" onmouseleave="myfunc3()" class="col">
+                                    <div class="card shadow-sm">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                            src="/techinal.jpeg" alt="">
+                                        <div class="card-body">
+                                            <dt>Others Technical and Non-Technical Skills</dt>
+                                            <dd>Java, SQL, Problem-Solving, Communication, Decision Making</dd>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                            <dl>
+
+
+                                <hr>
+                                <h3>Tools</h3>
+                                <dd>
+                                    <ol>
+                                        <li>IntelliJ IDEA</li>
+                                        <li>VSCode</li>
+                                        <li>Jupiter Notebook</li>
+                                        <li>Tableau</li>
+                                        <li>Power BI</li>
+                                        <li>Github</li>
+                                        
+                                        
+                                    </ol>
+                                </dd>
+                            </dl>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="position-sticky" style="top: 2rem;">
+                            <div class="p-4 mb-3 border rounded">
+                                <h4 class="fst-italic">Contact</h4>
+                                <p class="mb-0">Gmail-rajatjosh2323@gmail.com</p>
+                                <p class="mb-0">Phone No.- 9887278653</p>
+                            </div>
+                            <div class="border border-left ">
+                                <div class="p-4">
+                                    <h4 class="fst-italic">Certificates and Courses</h4>
+                                    <ol class="list-unstyled mb-0">
+                                        <li>1. <a id="c1" onmouseover="certificateadd1()"
+                                                onmouseleave="certificateremove1()"
+                                                class="text-dark text-decoration-none"
+                                                href="https://drive.google.com/file/d/1J324i7dXr8CQU6O6d_joq4kwxxv_zzXg/view?usp=drivesdk">Coursera-
+                                                Applied Machine Learning in Python</a></li>
+                                        <li>2. <a id="c2" onmouseover="certificateadd2()"
+                                                onmouseleave="certificateremove2()"
+                                                class="text-dark text-decoration-none"
+                                                href="https://drive.google.com/file/d/1mT81XywOOfnn9kzX9vgI_IZFCm3mxz78/view?usp=drivesdk">
+                                                Technook-Cloud Computing</a></li>
+                                        <li>3. <a id="c3" onmouseover="certificateadd3()"
+                                                onmouseleave="certificateremove3()"
+                                                class="text-dark text-decoration-none"
+                                                href="https://drive.google.com/file/d/1t8wgI45KiE00htJQ91vdVGUkbT6Z8Q-U/view?usp=drivesdk">Coursera-
+                                                Google Data Analytics Professional </a></li>
+                                        <li>4. <a id="c4" onmouseover="certificateadd4()"
+                                                onmouseleave="certificateremove4()"
+                                                class="text-dark text-decoration-none"
+                                                href="https://drive.google.com/file/d/1a8GUJh4GQoKNjb3Y6qpGLE67mRpGn_r3/view?usp=drivesdk">
+                                                Linkedin learning-Tableau
+                                                </a></li>
+                                    </ol>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="fst-italic">Industrial Trainings</h4>
+                                    <ol class="list-unstyled mb-0">
+                                        <li>1. <a id="c5" onmouseover="certificateadd5()"
+                                                onmouseleave="certificateremove5()"
+                                                class="text-dark text-decoration-none"
+                                                href="https://drive.google.com/file/d/1a3hwFnstO2LB3d6Lpw7yPcv_2TuuXtxD/view?usp=drivesdk">Industry
+                                                Oriented Training on Embedded, IoT & Matlab conducted by Cranes
+                                                Varsity.</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="fst-italic">Internship Experience </h4>
+                                    <ol class="list-unstyled mb-0">
+                                            <li>1. <a id="c6" onmouseover="certificateadd6()"
+                                                    onmouseleave="certificateremove6()"
+                                                    class="text-dark text-decoration-none"
+                                                    href="https://drive.google.com/file/d/1yqWlxRO9xe67iKaTtXFYYqaysJSc4fth/view?usp=drivesdk">Cloud Computing-Teachnook (Remote) 09-07/2022</a>
+                                            </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        </main>
+        <footer class=" border pt-4 text-body-secondary text-center text-small" style="background-color: rgb(41, 28, 40);opacity: 0.75;">
+            <footer class=" text-center text-white" style="background-color: rgb(41, 28, 40)5;">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Social media -->
+                    <section class="mb-3">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <!-- Twitter -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;"
+                            href="https://twitter.com/RajatJoshi47221" role="button" target="_blank"><i
+                                class="fa fa-twitter"></i></a>
+    
+                        <!-- Instagram -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #e12c3b;"
+                            href="https://www.instagram.com/Rajatjoshi_2.0/" role="button" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
+    
+                        <!-- Linkedin -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #0e5f8b;"
+                            href="https://www.linkedin.com/in/rajat-joshi2308" role="button" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                        <!-- Github -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #333333;"
+                            href="https://github.com/Rajat2308" role="button" target="_blank"><i
+                                class="fa fa-github"></i></a>
+                        
+                        <!--Email-->   
+                        <a class="btn text-white btn-floating m-1" style="background-color: #d75113;"
+                            href="https://mail.google.com/mail/rajatjosh2323@gmail.com" role="button" target="_blank"><i
+                                class="fa fa-envelope"></i></a>     
+    
+                        <a class="d-flex p-2 m-2 justify-content-center align-items-center" target="_blank"
+                            href="https://leetcode.com/Rajat2308/"><img height="30" width="30" src="/leetcode.png"
+                                alt="Loading an image"></a>
+                    </section>
+                    <!-- Section: Social media -->
+        </footer>
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center" width="100%"  style="background-color:rgba(244, 238, 238, 0.512);">
+        © 2023 Copyright:
+
+    </div>
+        <!-- <footer class="blog-footer">
+                <p>
+                   <button class="btn btn-dark "> 
+                    <a class="text-decoration-none text-light" href="#">Back to top</a>
+                   </button>
+                </p>
+            </footer> -->
+
+
+
+
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
